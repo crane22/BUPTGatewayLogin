@@ -15,7 +15,7 @@ Change the variable flag to 1 (`flag=1`), and assign usr and pw with your person
 ### Single-param(Recommended)/单参数（推荐）  
 `./connect.sh {StudentID}`  
 You need to input your password later, and your password will not be storaged locally.  
-`./connect.sh {学号}`
+`./connect.sh {学号}`  
 这个方法比较安全，历史记录里只有学号，只需要每次手输一下密码，密码也不会在本地存储，兼顾了方便和安全。这样可以防止被滥用（虽然北邮已经不计校外流量了（不计流量真好，下数据集就不用花钱了），滥用的也只有你在校园网的浏览记录，但以防你和我一样有精神洁癖）  
 ### No-param/没参数  
 `./connect.sh`  
