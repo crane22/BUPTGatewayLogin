@@ -20,7 +20,7 @@ fi
 
 if command -v curl >/dev/null 2>&1; then
     curl --silent "http://10.3.8.211/login" -d "user=$usr&pass=$pw" | grep 0x
-    ret_code=`curl -I -s baidu.com --connect-timeout 0.5 -w %{http_code}`
+    ret_code=`curl -I -s baidu.com --connect-timeout 1 -w %{http_code} | awk 'END {print}'`
     if [ $ret_code == "200" ]; then
         echo "Internet Connected."
     else
