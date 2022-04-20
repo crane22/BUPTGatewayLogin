@@ -1,19 +1,25 @@
 #!/bin/bash
-if [ $# == 2 ]; then
-    usr=$1
-    pw=$2
-elif [ $# == 1 ]; then
-    usr=$1
-    read -s -p  "Input your password: " pw
-    echo -e "\n"
+flag=0
+if [$flag == 1]; then
+    usr=`Your Student ID here`
+    pw=`Your Gateway Password here`
 else
-    read -p "Input your username: " usr
-    read -s -p  "Input your password: " pw
-    echo -e "\n"
+    if [ $# == 2 ]; then
+        usr=$1
+        pw=$2
+    elif [ $# == 1 ]; then
+        usr=$1
+        read -s -p  "Input your password: " pw
+        echo -e "\n"
+    else
+        read -p "Input your username: " usr
+        read -s -p  "Input your password: " pw
+        echo -e "\n"
+    fi
 fi
 
 if command -v curl >/dev/null 2>&1; then
-    curl --silent "http://10.3.8.211/login" -d "user=$usr&pass=$pw"
+    curl --silent "http://10.3.8.211/login" -d "user=$usr&pass=$pw" | grep 0x
     ret_code=`curl -I -s baidu.com --connect-timeout 0.5 -w %{http_code}`
     if [ $ret_code == "200" ]; then
         echo "Internet Connected."
