@@ -20,7 +20,7 @@ You need to input your password later, and your password will not be storaged lo
 ### No-param/没参数  
 `./connect.sh`  
 You need to input your username and password later, and your information will not be storaged locally.  
-这个就是每次登录都需要手动输入学号和密码了，本地都没有记录，就是有点麻烦  
+这个就是每次登录都需要手动输入学号和密码了，本地没有记录相对安全，就是有点麻烦  
 ### Disconnect/断开连接
 `./disconnect.sh`
 It is recommended to disconnect the connection after use.  
