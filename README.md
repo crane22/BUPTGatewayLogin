@@ -1,6 +1,7 @@
 # BUPTGatewayLogin/北邮网关登录脚本  
 A simple script runs on Bash shell which can help to connect and disconnect to the Campus Network at BUPT.  
 一个瞎写的能连接和断开连接北邮校园网的Bash脚本，在只有命令行的时候很有用（逃  
+真的会有人像我一样这么无聊，把登录校园网还搞这么复杂，还要写这么长的说明吗（笑  
 ## Usage/用法  
 ### Before use/使用前
 `chmod +x connect.sh disconnect.sh`  
