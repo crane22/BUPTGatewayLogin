@@ -28,4 +28,4 @@ It is recommended to disconnect the connection after use.
 ### Acknowledgment/致谢  
 Great thanks to YE Peida Experimental Class, BUPT and @xytoki!  
 感谢学校（尤其是某叶实验班）愿意给我们免费提供算力，如果不是因为这个我也不会糊这个脚本  
-感谢晓羽(https://github.com/xytoki)和Linn提供的两种思路（虽然wget根本不是按某人的那种方法写的，需要专门用`--post-data=`来传输参数，查了很多资料我才搞定了wget的部分），尤其是晓羽，基本帮我写好了整个框架和curl的版本，基本开箱可用。当然，wget和curl选择的那个部分，我参考了z4h的（https://github.com/romkatv/zsh4humans）的安装代码。（顺带在这推荐一下z4h，真的很好用）之后就是自己顺便糊了一个联网检测出来，反正感觉wget比curl在这个用途上反人类多了，毕竟主要是用于下载的工具嘛  
+感谢晓羽( https://github.com/xytoki )和Linn提供的两种思路（虽然wget根本不是按某人的那种方法写的，需要专门用`--post-data=`来传输参数，查了很多资料我才搞定了wget的部分），尤其是晓羽，基本帮我写好了整个框架和curl的版本，基本开箱可用。当然，wget和curl选择的那个部分，我参考了z4h的(https://github.com/romkatv/zsh4humans)的安装代码。（顺带在这推荐一下z4h，真的很好用）之后就是自己顺便糊了一个联网检测出来，反正感觉wget比curl在这个用途上反人类多了，毕竟主要是用于下载的工具嘛  
