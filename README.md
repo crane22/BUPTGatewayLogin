@@ -22,6 +22,6 @@ You need to input your password later, and your password will not be storaged lo
 You need to input your username and password later, and your information will not be storaged locally.  
 这个就是每次登录都需要手动输入学号和密码了，本地没有记录相对安全，就是有点麻烦  
 ### Disconnect/断开连接
-`./disconnect.sh`
+`./disconnect.sh`  
 It is recommended to disconnect the connection after use.  
-用完最好还是断开连接，尤其是好多人一块公用的服务器（我搞这个的原因也是某实验班给我们白嫖了算力（在这一并感谢），但是只有命令行能用，所以用了一中午的时间糊了一下，要是有更好的方法欢迎提issue）
+用完最好还是断开连接，尤其是好多人一块公用的服务器（我搞这个的原因也是某实验班给我们白嫖了算力（在这偷偷感谢），但因为只有ssh权限，所以用了一中午的时间糊出了这个。如果要是有更简洁的代码欢迎提issue）
