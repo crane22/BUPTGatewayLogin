@@ -1,6 +1,6 @@
 #!/bin/bash
 flag=0
-if [$flag == 1]; then
+if [ $flag == 1 ]; then
     usr=`Your Student ID here`
     pw=`Your Gateway Password here`
 else
